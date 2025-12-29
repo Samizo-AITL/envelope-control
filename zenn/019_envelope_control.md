@@ -1,5 +1,5 @@
 ---
-title: "【FN】Envelope Control ― 制御対象の使用範囲を状態として扱う設計思想"
+title: "【AITL】Envelope Control ― 制御対象の使用範囲を状態として扱う設計思想"
 emoji: "📦"
 type: "tech"
 topics: ["control", "robust-control", "fsm", "safety", "cyber-physical-systems"]
