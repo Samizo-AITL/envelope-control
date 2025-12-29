@@ -1,7 +1,3 @@
----
-title: Envelope Control
----
-
 # Envelope Control
 
 This repository studies **control architectures that explicitly treat operational envelopes
