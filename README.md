@@ -19,12 +19,20 @@ In this framework:
 - Reconfiguration or redesign proposals may be generated externally,
   but **application is strictly gated by predefined envelope constraints**.
 
+👉 See:  
+- **[Envelope Control Concept](docs/00_concept.md)**  
+- **[Operational Envelope Definition](docs/01_envelope.md)**
+
 ## Key Ideas
 
 - Operational envelopes are explicit states, not implicit assumptions
 - Safety and survivability override performance optimization
 - Degradation is handled by **mode restriction**, not aggressive adaptation
 - Control systems should continue operating safely even with partial failures
+
+👉 See:  
+- **[FSM Design](docs/02_fsm.md)**  
+- **[Design Rules](docs/04_design_rules.md)**
 
 ## Typical Use Cases
 
@@ -33,15 +41,26 @@ In this framework:
 - Long-duration autonomous systems with aging components
 - Systems operating under strict power (V–I) constraints
 
+👉 Example:  
+- **[V–I Envelope Example](examples/envelope_vi.md)**
+
 ## Scope
 
 This repository focuses on **architectural principles and design patterns**.
 It is not tied to a specific control law, optimizer, or AI model.
 
+👉 Explicitly excluded:  
+- Real-time learning controllers  
+- Autonomous decision-making agents  
+- Envelope redefinition at runtime  
+
 ## Status
 
 This repository represents an independent research direction
 separate from prior AITL controller studies.
+
+👉 Design notes (non-normative):  
+- **[Design Log](notes/design_log.md)**
 
 ---
 *Envelope Control emphasizes knowing when not to exceed limits,
