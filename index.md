@@ -1,5 +1,6 @@
 ---
-title: Envelope Control
+title: "Envelope Control"
+description: "control architectures that explicitly treat operational envelopes"
 ---
 
 # Envelope Control
