@@ -81,7 +81,7 @@ rather than how to optimize beyond them.*
 
 ## License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/envelope-control//#-license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/envelope-control/#---license)
 
 | 📌 Item | License | Description |
 |--------|---------|-------------|
