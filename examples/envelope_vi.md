@@ -1,5 +1,6 @@
 ---
-title: V–I Envelope Example
+title: "envelope-control"
+description: "control architectures that explicitly treat operational envelopes"
 ---
 
 # V–I Envelope Example
