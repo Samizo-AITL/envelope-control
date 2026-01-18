@@ -1,5 +1,6 @@
 ---
-title: Operational Envelope Definition
+title: "envelope-control"
+description: "control architectures that explicitly treat operational envelopes"
 ---
 
 # Operational Envelope Definition
