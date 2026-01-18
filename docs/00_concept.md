@@ -3,73 +3,103 @@ title: "envelope-control"
 description: "control architectures that explicitly treat operational envelopes"
 ---
 
-# Envelope Control – Concept
+# 🧭 Envelope Control — Concept
 
-## Definition
+## 📘 Definition
 
-**Envelope Control** is a control architecture in which the *operational envelope*
-of a controlled system is treated as a **first-class control state**.
+**Envelope Control** is a control architecture in which the  
+**operational envelope** of a controlled system is treated as a  
+**first-class control state**.
 
-An operational envelope represents the region in which the system can operate
-safely and predictably, given physical, electrical, and sensing constraints.
+An *operational envelope* defines the region in which a system can operate  
+**safely, predictably, and sustainably**, given:
 
-Exceeding the envelope is not treated as a disturbance,
-but as a **state transition**.
+- ⚙ physical constraints  
+- ⚡ electrical / V–I limits  
+- 📡 sensing validity and availability  
 
----
-
-## Motivation
-
-Conventional control architectures assume that:
-- sensors are valid,
-- actuators can deliver commanded effort,
-- power is sufficient.
-
-In real systems, these assumptions break first.
-
-Envelope Control prioritizes:
-- survivability over performance,
-- bounded behavior over optimal behavior,
-- controlled degradation over aggressive adaptation.
+🚨 **Exceeding the envelope is not treated as a disturbance**,  
+but as a **state transition** that changes what actions are permitted.
 
 ---
 
-## Core Principles
+## 🎯 Motivation
 
-1. **Envelope First**
-   - Performance objectives are secondary to envelope constraints.
+Conventional control architectures often *implicitly assume* that:
 
-2. **Exceedance is a State**
-   - Envelope violation triggers mode changes, not gain tuning.
+- 📡 sensors are always valid  
+- 🦾 actuators can deliver commanded effort  
+- 🔋 power and resources are sufficient  
 
-3. **Permission-Based Adaptation**
-   - Any reconfiguration is allowed only within predefined envelopes.
-
-4. **Explicit Refusal**
-   - The architecture must explicitly refuse unsafe actions.
+In real systems, **these assumptions are the first to break**.
 
 ---
 
-## Non-Goals
+### Envelope Control instead prioritizes:
 
-Envelope Control does NOT aim to:
-- maximize performance,
-- optimize cost functions,
-- replace classical controllers,
-- perform real-time learning.
+| Priority | Meaning |
+|--------|--------|
+| 🛡 **Survivability** | Staying alive beats tracking performance |
+| 📦 **Bounded behavior** | Respect limits over chasing optimality |
+| 🔄 **Controlled degradation** | Restrict modes instead of aggressive adaptation |
+
+---
+
+## 🧠 Core Principles
+
+### ① 📦 Envelope First
+Performance objectives are **always subordinate** to envelope constraints.
 
 ---
 
-## Positioning
-
-Envelope Control is:
-- not an AI controller,
-- not an adaptive controller,
-- not a fault-diagnosis framework.
-
-It is an **architectural control discipline** focused on operational limits.
+### ② 🔄 Exceedance is a State
+Envelope violations trigger **mode or state transitions**,  
+not continuous gain tuning or hidden compensation.
 
 ---
-*Envelope Control answers the question:  
-“What must the system refuse to do in order to survive?”*
 
+### ③ 🔐 Permission-Based Adaptation
+Reconfiguration or adaptation is allowed **only if explicitly permitted**  
+by the current envelope state.
+
+---
+
+### ④ 🚫 Explicit Refusal
+The architecture must be able to say:
+
+> **“This action is unsafe and will not be executed.”**
+
+Silence or saturation is not acceptable behavior.
+
+---
+
+## 🚫 Non-Goals
+
+Envelope Control does **not** aim to:
+
+- 🚀 maximize performance  
+- 📉 optimize cost functions  
+- 🔁 replace classical controllers  
+- 🧪 perform real-time learning  
+
+Classical control laws remain valid —  
+**Envelope Control governs when they are allowed to act.**
+
+---
+
+## 🧭 Positioning
+
+Envelope Control is **not**:
+
+- 🤖 an AI controller  
+- 🔧 an adaptive controller  
+- 🩺 a fault-diagnosis framework  
+
+It is an **architectural control discipline** focused on  
+**explicitly managing operational limits as system states**.
+
+---
+
+> 💡 *Envelope Control answers a different question than optimization:*  
+>  
+> **“What must the system refuse to do in order to survive?”**
