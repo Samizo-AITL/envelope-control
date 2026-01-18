@@ -1,3 +1,8 @@
+---
+title: "envelope-control"
+description: "control architectures that explicitly treat operational envelopes"
+---
+
 # Design Log
 
 - Envelope boundaries must be conservative
