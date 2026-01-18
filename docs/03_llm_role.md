@@ -1,5 +1,6 @@
 ---
-title: Role of LLM
+title: "envelope-control"
+description: "control architectures that explicitly treat operational envelopes"
 ---
 
 # Role of LLM in Envelope Control
