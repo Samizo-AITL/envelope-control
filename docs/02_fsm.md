@@ -1,5 +1,6 @@
 ---
-title: FSM Design
+title: "envelope-control"
+description: "control architectures that explicitly treat operational envelopes"
 ---
 
 # Finite State Machine (FSM)
