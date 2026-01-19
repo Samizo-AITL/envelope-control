@@ -12,6 +12,14 @@ This repository studies **control architectures that explicitly treat operationa
 
 ---
 
+## 🔗 Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/envelope-control/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/envelope-control/tree/main) |
+
+---
+
 ## 💡 Concept
 
 Conventional control systems prioritize performance and tracking accuracy.  
